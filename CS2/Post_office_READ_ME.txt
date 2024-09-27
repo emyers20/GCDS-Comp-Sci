@@ -1,0 +1,2 @@
+This code asks the User to enter their package's length, width, height, zip code, and where they want it to go.
+Then, the code takes those parameters and determines the package type and the number of zones it is going through. Then, it associates that with a price and prints the price.
