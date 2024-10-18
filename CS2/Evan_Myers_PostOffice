@@ -129,7 +129,7 @@ def main():
         print(f"Your package is {mail_type}")
     else:
             
-        print(f"${costTwo}")
+        print(f"{costTwo}")
     
     
 main()
