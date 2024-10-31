@@ -1,0 +1,1 @@
+ A program that opens a file, removes useless words then writes the most important ones to an additional file.
