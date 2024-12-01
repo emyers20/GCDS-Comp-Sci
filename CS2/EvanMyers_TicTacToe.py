@@ -1,6 +1,6 @@
 #Evan Myers
 #Description: A program that allows the user to play tic tac toe with the user and tells you when they win
-#Bugs: 
+#Bugs: tie condition has issues
 #Features: allows the user to randomly select their symbol
 #Sources: Python For Everybody
 #Log 1.0 inital release
