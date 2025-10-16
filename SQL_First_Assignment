@@ -1,0 +1,52 @@
+select * 
+from users_gcds_friday
+order by NameLast desc
+
+select * from users_gcds_friday
+where Advisor  = "Morton, Adele"
+
+select NameFirst, NameLast, Class from users_gcds_friday
+where Class = '9' or Class = '10' or Class = '11' or Class = '12'
+order by Class
+
+
+select Sex, count(*) as total_students
+from users_gcds_friday
+group by Sex
+
+select Class, count(*) as total
+from users_gcds_friday
+where Class = '9' or Class  ='12'
+group by Class
+
+select NameFirst, count(*) as frequency
+from users_gcds_friday
+group by NameFirst
+order by frequency DESC
+Limit 10
+
+select * from users_gcds_friday
+where NameLast in(
+    select NameLast
+    from users_gcds_friday
+    group by NameLast
+    having count(*) > 1
+)
+order by NameLast, NameFirst
+
+
+select * 
+from users_gcds_friday
+where Class = '12'
+order by NameFirst, Class
+
+select Advisor, count(*) as student_count
+from users_gcds_friday
+group by Advisor
+having count(*) >10
+
+select City, count(*) as total_students
+from users_gcds_friday
+group by City
+order by total_students DESC
+limit 5
